@@ -1,0 +1,362 @@
+2018-11-19 13:54:28 - ----------------------------------------------------------------
+MOD: So Call for Price
+MISSING FILE!
+D:\iSell\www\aruna.market/public_html/catalog/language/ar-ar/ar-ar.php
+
+
+MOD: So Call for Price
+NOT FOUND!
+CODE: 'price' => $price,
+FILE: catalog/controller/extension/module/featured.php
+
+
+MOD: So Call for Price
+NOT FOUND!
+CODE: if ((float)$product_info['special']) {
+FILE: catalog/controller/extension/module/bestseller.php
+
+
+MOD: So Call for Price
+NOT FOUND!
+CODE: 'price' => $price,
+FILE: catalog/controller/extension/module/latest.php
+
+
+MOD: So Call for Price
+NOT FOUND!
+CODE: 'price' => $price,
+FILE: catalog/controller/extension/module/special.php
+
+
+MOD: So Call for Price
+NOT FOUND!
+CODE: 'price' => $price,
+FILE: catalog/controller/product/category.php
+
+
+MOD: So Call for Price
+NOT FOUND!
+CODE: 'price' => $price,
+FILE: catalog/controller/product/manufacturer.php
+
+
+MOD: So Call for Price
+NOT FOUND!
+CODE: 'price' => $price,
+FILE: catalog/controller/product/search.php
+
+
+MOD: So Call for Price
+NOT FOUND!
+CODE: 'price' => $price,
+FILE: catalog/controller/product/special.php
+
+
+MOD: So Call for Price
+NOT FOUND!
+CODE: {{ product.price }}
+FILE: catalog/view/theme/so-emarket/template/product/category.twig
+
+
+MOD: So Call for Price
+NOT FOUND!
+CODE: {{ product.price }}
+FILE: catalog/view/theme/so-mobile/template/product/category.twig
+
+
+MOD: So Call for Price
+NOT FOUND!
+CODE: {{ product.price }}
+FILE: catalog/view/theme/so-emarket/template/product/manufacturer_info.twig
+
+
+MOD: So Call for Price
+NOT FOUND!
+CODE: {{ product.price }}
+FILE: catalog/view/theme/so-mobile/template/product/manufacturer_info.twig
+
+
+MOD: So Call for Price
+NOT FOUND!
+CODE: {{ product.price }}
+FILE: catalog/view/theme/so-emarket/template/product/search.twig
+
+
+MOD: So Call for Price
+NOT FOUND!
+CODE: {{ product.price }}
+FILE: catalog/view/theme/so-mobile/template/product/search.twig
+
+
+MOD: So Call for Price
+NOT FOUND!
+CODE: {{ product.price }}
+FILE: catalog/view/theme/so-emarket/template/product/special.twig
+
+
+MOD: So Call for Price
+NOT FOUND!
+CODE: {{ product.price }}
+FILE: catalog/view/theme/so-mobile/template/product/special.twig
+
+
+MOD: So Call for Price
+NOT FOUND!
+CODE: 'price' => $price,
+FILE: catalog/controller/product/product.php
+
+
+MOD: So Call for Price
+NOT FOUND!
+CODE: {% if product.tax %}
+FILE: catalog/view/theme/so-emarket/template/product/product.twig
+
+
+MOD: So Call for Price
+NOT FOUND!
+CODE: {% if product.tax %}
+FILE: catalog/view/theme/so-mobile/template/product/product.twig
+
+
+MOD: So Call for Price
+NOT FOUND!
+CODE: <input type="button" value="{{ button_cart }}" data-loading-text="{{ text_loading }}" id="button-cart" class="btn btn-mega btn-lg">
+FILE: catalog/view/theme/default/template/product/product.twig
+
+
+MOD: So Call for Price
+NOT FOUND!
+CODE: <input type="button" value="{{ button_cart }}" data-loading-text="{{ text_loading }}" id="button-cart" class="btn btn-mega btn-lg">
+FILE: catalog/view/theme/so-emarket/template/product/product.twig
+
+
+MOD: So Call for Price
+NOT FOUND!
+CODE: <input type="button" value="{{ button_cart }}" data-loading-text="{{ text_loading }}" id="button-cart" class="btn btn-mega btn-lg">
+FILE: catalog/view/theme/so-mobile/template/product/product.twig
+
+
+MOD: So Call for Price
+NOT FOUND!
+CODE: 'price' => $price,
+FILE: catalog/controller/account/wishlist.php
+
+
+MOD: So Call for Price
+NOT FOUND!
+CODE: 'price' => $price,
+FILE: catalog/controller/product/compare.php
+
+
+MOD: So Call for Price
+NOT FOUND!
+CODE: 'price' => $price,
+FILE: catalog/controller/extension/module/so_filter_shop_by.php
+
+
+MOD: So Call for Price
+NOT FOUND!
+CODE: <button class="addToCart btn-button" type="button" title="{{ button_cart }}" onclick="cart.add('{{ product.product_id }}', '{{ product.minimum }}');"><i class="fa fa-shopping-basket"></i><span>{{ button_cart }}</span></button>
+FILE: catalog/view/theme/so-mobile/template/soconfig/listing.twig
+
+
+MOD: So Call for Price
+NOT FOUND!
+CODE: 'price' => $price,
+FILE: catalog/controller/extension/module/so_listing_tabs.php
+
+
+MOD: So Call for Price
+NOT FOUND!
+CODE: <button type="button" class="addToCart btn-button" title="{{ objlang.get('button_cart') }}" onclick="cart.add('{{ product.product_id }} ');"><i class="fa fa-shopping-basket"></i><span>{{ objlang.get('button_cart') }} </span></button>
+FILE: catalog/view/theme/so-emarket/template/extension/module/so_listing_tabs/category/default_items.twig
+
+
+MOD: So Call for Price
+NOT FOUND!
+CODE: <button type="button" class="addToCart btn-button" title="{{ objlang.get('button_cart') }}" onclick="cart.add('{{ product.product_id }} ');"><i class="fa fa-shopping-basket"></i><span>{{ objlang.get('button_cart') }} </span></button>
+FILE: catalog/view/theme/so-emarket/template/extension/module/so_listing_tabs/default3/default_items.twig
+
+
+MOD: So Call for Price
+NOT FOUND!
+CODE: <button type="button" class="addToCart btn-button" title="{{ objlang.get('button_cart') }}" onclick="cart.add('{{ product.product_id }} ');"><i class="fa fa-shopping-basket"></i><span>{{ objlang.get('button_cart') }} </span></button>
+FILE: catalog/view/theme/so-mobile/template/extension/module/so_listing_tabs/category/default_items.twig
+
+
+MOD: So Call for Price
+NOT FOUND!
+CODE: <button type="button" class="addToCart btn-button" title="{{ objlang.get('button_cart') }}" onclick="cart.add('{{ product.product_id }} ');"><i class="fa fa-shopping-basket"></i><span>{{ objlang.get('button_cart') }} </span></button>
+FILE: catalog/view/theme/so-mobile/template/extension/module/so_listing_tabs/default/default_items.twig
+
+
+MOD: So Call for Price
+NOT FOUND!
+CODE: <button type="button" class="addToCart btn-button" title="{{ objlang.get('button_cart') }}" onclick="cart.add('{{ product.product_id }} ');"><i class="fa fa-shopping-basket"></i><span>{{ objlang.get('button_cart') }} </span></button>
+FILE: catalog/view/theme/so-mobile/template/extension/module/so_listing_tabs/default2/default_items.twig
+
+
+MOD: So Call for Price
+NOT FOUND!
+CODE: <button type="button" class="addToCart btn-button" title="{{ objlang.get('button_cart') }}" onclick="cart.add('{{ product.product_id }} ');"><i class="fa fa-shopping-basket"></i><span>{{ objlang.get('button_cart') }} </span></button>
+FILE: catalog/view/theme/so-mobile/template/extension/module/so_listing_tabs/default3/default_items.twig
+
+
+MOD: So Color Swatch
+NOT FOUND!
+CODE: html += ' <td class="text-right"><input type="text" name="product_image[' + image_row + '][sort_order]" value="" placeholder="{{ entry_sort_order }}" class="form-control" /></td>';
+FILE: admin/view/template/catalog/product_form.twig
+
+
+MOD: So Color Swatch
+NOT FOUND!
+CODE: <img data-sizes="auto" src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==" data-src="{{ product.thumb }}" title="{{ product.name }} " class="lazyload img-responsive" />
+FILE: catalog/view/theme/so-emarket/template/soconfig/listing.twig
+
+
+MOD: So Color Swatch
+NOT FOUND!
+CODE: <img data-sizes="auto" src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==" data-src="{{ product.thumb }}" title="{{ product.name }} " class="lazyload img-responsive" />
+FILE: catalog/view/theme/so-mobile/template/soconfig/listing.twig
+
+
+MOD: So Color Swatch
+NOT FOUND!
+CODE: <h3>{{ text_option }}</h3>
+FILE: catalog/view/theme/so-mobile/template/product/product.twig
+
+
+MOD: So Color Swatch
+NOT FOUND!
+CODE: 'product_id' => $product_info['product_id'],
+FILE: catalog/controller/extension/module/featured.php
+
+
+MOD: So Social Login
+NOT FOUND!
+CODE: <div id="socialLogin"></div>
+FILE: catalog/view/theme/default/template/common/header.twig
+
+
+MOD: So Social Login
+NOT FOUND!
+CODE: <div id="socialLogin"></div>
+FILE: catalog/view/theme/so-mobile/template/common/header.twig
+
+
+MOD: So Countdown Popup
+NOT FOUND!
+CODE: </footer>
+FILE: catalog/view/theme/so-emarket/template/common/footer.twig
+
+
+MOD: So Countdown Popup
+NOT FOUND!
+CODE: </footer>
+FILE: catalog/view/theme/so-mobile/template/common/footer.twig
+
+
+MOD: Simple Blog
+NOT FOUND!
+CODE: $categories = $this->model_catalog_category->getCategories(0);
+FILE: catalog/controller/common/header.php
+----------------------------------------------------------------
+MOD: Purpletree Multivendor for OpenCart 3.x
+MISSING FILE!
+D:\iSell\www\aruna.market/public_html/catalog/view/theme/journal2/template/extension/module/account.twig
+----------------------------------------------------------------
+MOD: Purpletree Multivendor for OpenCart 3.x
+MISSING FILE!
+D:\iSell\www\aruna.market/public_html/catalog/model/extension/d_quickcheckout/order.php
+----------------------------------------------------------------
+MOD: Purpletree Multivendor for OpenCart 3.x
+MISSING FILE!
+D:\iSell\www\aruna.market/public_html/catalog/view/theme/*/template/journal2/headers/mega.twig
+----------------------------------------------------------------
+MOD: Purpletree Multivendor for OpenCart 3.x
+MISSING FILE!
+D:\iSell\www\aruna.market/public_html/catalog/view/theme/*/template/journal2/headers/center.twig
+----------------------------------------------------------------
+MOD: Purpletree Multivendor for OpenCart 3.x
+MISSING FILE!
+D:\iSell\www\aruna.market/public_html/catalog/view/theme/journal3/template/journal3/headers/desktop/slim.twig
+----------------------------------------------------------------
+MOD: Purpletree Multivendor for OpenCart 3.x
+MISSING FILE!
+D:\iSell\www\aruna.market/public_html/catalog/view/theme/journal3/template/journal3/headers/desktop/mega.twig
+----------------------------------------------------------------
+MOD: Purpletree Multivendor for OpenCart 3.x
+MISSING FILE!
+D:\iSell\www\aruna.market/public_html/catalog/view/theme/journal3/template/journal3/headers/desktop/default.twig
+----------------------------------------------------------------
+MOD: Purpletree Multivendor for OpenCart 3.x
+MISSING FILE!
+D:\iSell\www\aruna.market/public_html/catalog/view/theme/journal3/template/journal3/headers/desktop/default2.twig
+----------------------------------------------------------------
+MOD: Purpletree Multivendor for OpenCart 3.x
+MISSING FILE!
+D:\iSell\www\aruna.market/public_html/catalog/view/theme/journal3/template/journal3/headers/desktop/compact.twig
+----------------------------------------------------------------
+MOD: Purpletree Multivendor for OpenCart 3.x
+MISSING FILE!
+D:\iSell\www\aruna.market/public_html/catalog/view/theme/journal3/template/journal3/headers/desktop/classic.twig
+----------------------------------------------------------------
+MOD: Purpletree Multivendor for OpenCart 3.x
+MISSING FILE!
+D:\iSell\www\aruna.market/public_html/catalog/view/theme/*/template/journal2/headers/compact.twig
+----------------------------------------------------------------
+MOD: Purpletree Multivendor for OpenCart 3.x
+MISSING FILE!
+D:\iSell\www\aruna.market/public_html/catalog/view/theme/*/template/journal2/headers/default.twig
+----------------------------------------------------------------
+MOD: Purpletree Multivendor for OpenCart 3.x
+MISSING FILE!
+D:\iSell\www\aruna.market/public_html/catalog/view/theme/*/template/common/header1.twig
+----------------------------------------------------------------
+MOD: Purpletree Multivendor for OpenCart 3.x
+MISSING FILE!
+D:\iSell\www\aruna.market/public_html/catalog/view/theme/*/template/common/header2.twig
+----------------------------------------------------------------
+MOD: Purpletree Multivendor for OpenCart 3.x
+MISSING FILE!
+D:\iSell\www\aruna.market/public_html/catalog/view/theme/*/template/common/header3.twig
+----------------------------------------------------------------
+MOD: Purpletree Multivendor for OpenCart 3.x
+MISSING FILE!
+D:\iSell\www\aruna.market/public_html/catalog/view/theme/*/template/common/header4.twig
+----------------------------------------------------------------
+MOD: Purpletree Multivendor for OpenCart 3.x
+MISSING FILE!
+D:\iSell\www\aruna.market/public_html/catalog/view/theme/*/template/common/footer1.twig
+----------------------------------------------------------------
+MOD: Purpletree Multivendor for OpenCart 3.x
+MISSING FILE!
+D:\iSell\www\aruna.market/public_html/catalog/view/theme/*/template/common/footer2.twig
+----------------------------------------------------------------
+MOD: Purpletree Multivendor for OpenCart 3.x
+MISSING FILE!
+D:\iSell\www\aruna.market/public_html/catalog/view/theme/*/template/common/footer3.twig
+----------------------------------------------------------------
+MOD: Purpletree Multivendor for OpenCart 3.x
+MISSING FILE!
+D:\iSell\www\aruna.market/public_html/catalog/view/theme/*/template/common/footer4.twig
+----------------------------------------------------------------
+MOD: Purpletree Multivendor for OpenCart 3.x
+MISSING FILE!
+D:\iSell\www\aruna.market/public_html/catalog/view/theme/*/template/common/footer5.twig
+----------------------------------------------------------------
+MOD: Purpletree Multivendor for OpenCart 3.x
+MISSING FILE!
+D:\iSell\www\aruna.market/public_html/catalog/view/theme/*/template/common/footer6.twig
+----------------------------------------------------------------
+MOD: Purpletree Multivendor for OpenCart 3.x
+MISSING FILE!
+D:\iSell\www\aruna.market/public_html/catalog/controller/journal3/layout.php
+----------------------------------------------------------------
+MOD: Purpletree Multivendor for OpenCart 3.x
+MISSING FILE!
+D:\iSell\www\aruna.market/public_html/catalog/view/theme/journal3/template/account/order_list.twig
+----------------------------------------------------------------
+MOD: Purpletree Multivendor for OpenCart 3.x
+MISSING FILE!
+D:\iSell\www\aruna.market/public_html/catalog/view/theme/journal3/template/product/product.twig

@@ -1,0 +1,1145 @@
+2018-11-19 13:54:28 - MOD: Modification Default
+
+FILE: system/engine/action.php
+REGEX: ~(require|include)(_once)?\(([^)]+)~
+LINE: 69
+
+FILE: system/engine/loader.php
+REGEX: ~(require|include)(_once)?\(([^)]+)~
+LINE: 77
+LINE: 151
+LINE: 168
+
+FILE: system/library/config.php
+REGEX: ~(require|include)(_once)?\(([^)]+)~
+LINE: 59
+
+FILE: system/library/language.php
+REGEX: ~(require|include)(_once)?\(([^)]+)~
+LINE: 67
+LINE: 73
+
+FILE: system/library/template/template.php
+REGEX: ~(require|include)(_once)?\(([^)]+)~
+LINE: 18
+
+FILE: system/library/template/twig.php
+CODE: $loader = new \Twig_Loader_Filesystem(DIR_TEMPLATE);
+LINE: 19
+----------------------------------------------------------------
+MOD: So Product Feature
+
+FILE: admin/language/en-gb/catalog/product.php
+CODE: // Entry
+LINE: 36
+
+FILE: admin/language/ru-ru/catalog/product.php
+CODE: // Entry
+LINE: 36
+
+FILE: admin/model/catalog/product.php
+CODE: $this->db->query("INSERT INTO " . DB_PREFIX . "product_description SET product_id = '" . (int)$product_id . "', language_id = '" . (int)$language_id . "', name = '" . $this->db->escape($value['name']) . "', description = '" . $this->db->escape($value['description']) . "', tag = '" . $this->db->escape($value['tag']) . "', meta_title = '" . $this->db->escape($value['meta_title']) . "', meta_description = '" . $this->db->escape($value['meta_description']) . "', meta_keyword = '" . $this->db->escape($value['meta_keyword']) . "'");
+LINE: 12
+LINE: 146
+CODE: public function getTotalProductsByTaxClassId($tax_class_id) {
+LINE: 684
+CODE: $query = $this->db->query("SELECT * FROM " . DB_PREFIX . "product_description WHERE product_id = '" . (int)$product_id . "'");
+LINE: 448
+CODE: $query = $this->db->query("SELECT * FROM " . DB_PREFIX . "product_description WHERE product_id = '" . (int)$product_id . "'");
+LINE: 452
+
+FILE: admin/controller/catalog/product.php
+CODE: $data['products'][] = array
+LINE: 364
+CODE: $data['products'][] = array
+LINE: 366
+CODE: $data['layouts'] = $this->model_design_layout->getLayouts();
+LINE: 1174
+
+FILE: admin/view/template/catalog/product_list.twig
+CODE: <td class="text-left">{{ product.name }}</td>
+LINE: 166
+
+FILE: admin/view/template/catalog/product_form.twig
+CODE: <li class="active"><a href="#tab-general" data-toggle="tab">{{ tab_general }}</a></li>
+LINE: 28
+CODE: <div class="tab-pane" id="tab-data">
+LINE: 155
+
+FILE: catalog/controller/product/product.php
+CODE: $data['options'] = array();
+LINE: 315
+----------------------------------------------------------------
+MOD: So ThemeConfig
+
+FILE: catalog/controller/common/language.php
+CODE: $data['languages'] = array();
+LINE: 17
+
+FILE: catalog/controller/information/contact.php
+CODE: public function index()
+LINE: 8
+
+FILE: catalog/controller/common/cart.php
+CODE: public function index()
+LINE: 7
+
+FILE: catalog/controller/common/header.php
+CODE: public function index()
+LINE: 39
+
+FILE: catalog/controller/common/footer.php
+CODE: public function index()
+LINE: 34
+
+FILE: catalog/controller/common/maintenance.php
+CODE: public function index()
+LINE: 13
+
+FILE: catalog/controller/common/home.php
+CODE: $data['header'] = $this->load->controller('common/header');
+LINE: 20
+CODE: public function index()
+LINE: 5
+
+FILE: catalog/controller/product/search.php
+CODE: public function index()
+LINE: 19
+CODE: $data['products'][] = array(
+LINE: 259
+CODE: $data['products'][] = array
+LINE: 267
+
+FILE: catalog/controller/product/special.php
+CODE: public function index()
+LINE: 19
+CODE: $data['products'][] = array(
+LINE: 149
+CODE: $data['products'][] = array
+LINE: 157
+
+FILE: catalog/controller/product/manufacturer.php
+CODE: public function index()
+LINE: 19
+CODE: $data['products'][] = array(
+LINE: 222
+CODE: $data['products'][] = array
+LINE: 230
+
+FILE: catalog/controller/product/category.php
+CODE: public function index()
+LINE: 19
+CODE: $data['products'][] = array(
+LINE: 231
+CODE: $data['products'][] = array
+LINE: 239
+CODE: public function info()
+LINE: 82
+CODE: public function index()
+LINE: 19
+CODE: $this->document->addScript('catalog/view/javascript/jquery/magnific/jquery.magnific-popup.min.js');
+LINE: 235
+CODE: $this->document->addStyle('catalog/view/javascript/jquery/magnific/magnific-popup.css');
+LINE: 240
+CODE: $data['description'] = html_entity_decode($product_info['description'], ENT_QUOTES, 'UTF-8');
+LINE: 268
+CODE: $data['options'] = array();
+LINE: 359
+CODE: $data['products'][] = array(
+LINE: 467
+CODE: $data['products'][] = array
+LINE: 469
+CODE: $data['images'] = array()
+LINE: 303
+
+FILE: system/engine/router.php
+CODE: while ($action instanceof Action)
+LINE: 59
+
+FILE: admin/controller/design/layout.php
+CODE: public function index()
+LINE: 5
+CODE: // Modules layout
+LINE: 362
+CODE: design/layout_form
+LINE: 406
+----------------------------------------------------------------
+MOD: So Mobile
+CODE: $this->response->setOutput($this->load->view('common/home', $data));
+LINE: 25
+CODE: return $this->load->view('common/header', $data)
+LINE: 130
+CODE: return $this->load->view('common/footer', $data);
+LINE: 99
+CODE: $data['heading_title'] = $category_info['name']
+LINE: 114
+CODE: $this->load->model('tool/image')
+LINE: 27
+CODE: $this->load->model('tool/image')
+LINE: 25
+CODE: $this->load->model('tool/image')
+LINE: 25
+LINE: 91
+----------------------------------------------------------------
+MOD: So OnePage Checkout
+
+FILE: catalog/controller/checkout/checkout.php
+CODE: class ControllerCheckoutCheckout extends Controller {
+LINE: 1130
+CODE: $data['breadcrumbs'] = array();
+LINE: 1180
+CODE: $this->response->setOutput($this->load->view('checkout/checkout', $data));
+LINE: 1545
+CODE: $this->response->setOutput($this->load->view('checkout/checkout', $data));
+LINE: 1545
+----------------------------------------------------------------
+MOD: So Menu - OpenCartWorks
+
+FILE: admin/controller/common/column_left.php
+CODE: $design = array();
+LINE: 379
+----------------------------------------------------------------
+MOD: So Call for Price
+
+FILE: catalog/language/en-gb/en-gb.php
+CODE: <?php
+LINE: 10
+
+FILE: catalog/controller/extension/module/featured.php
+CODE: $data['products'] = array();
+LINE: 32
+CODE: if ((float)$product_info['special']) {
+LINE: 65
+CODE: 'price' => $price,
+NOT FOUND - OPERATIONS ABORTED!
+
+FILE: catalog/controller/extension/module/bestseller.php
+CODE: $data['products'] = array();
+LINE: 32
+CODE: if ((float)$product_info['special']) {
+NOT FOUND - OPERATIONS ABORTED!
+
+FILE: catalog/view/theme/default/template/extension/module/featured.twig
+CODE: {{ product.price }}
+LINE: 23
+CODE: {% if product.tax %}
+LINE: 35
+CODE: <button type="button" onclick="cart.add('{{ product.product_id }}');"><i class="fa fa-shopping-cart"></i> <span class="hidden-xs hidden-sm hidden-md">{{ button_cart }}</span></button>
+LINE: 44
+
+FILE: catalog/view/theme/default/template/extension/module/bestseller.twig
+CODE: {{ product.price }}
+LINE: 23
+CODE: {% if product.tax %}
+LINE: 35
+CODE: <button type="button" onclick="cart.add('{{ product.product_id }}');"><i class="fa fa-shopping-cart"></i> <span class="hidden-xs hidden-sm hidden-md">{{ button_cart }}</span></button>
+LINE: 44
+
+FILE: catalog/view/theme/default/template/extension/module/latest.twig
+CODE: {{ product.price }}
+LINE: 15
+CODE: {% if product.tax %}
+LINE: 25
+CODE: <button type="button" onclick="cart.add('{{ product.product_id }}');"><i class="fa fa-shopping-cart"></i> <span class="hidden-xs hidden-sm hidden-md">{{ button_cart }}</span></button>
+LINE: 30
+
+FILE: catalog/view/theme/default/template/extension/module/special.twig
+CODE: {{ product.price }}
+LINE: 15
+CODE: {% if product.tax %}
+LINE: 25
+CODE: <button type="button" onclick="cart.add('{{ product.product_id }}');"><i class="fa fa-shopping-cart"></i> <span class="hidden-xs hidden-sm hidden-md">{{ button_cart }}</span></button>
+LINE: 30
+
+FILE: catalog/controller/extension/module/latest.php
+CODE: $data['products'] = array();
+LINE: 32
+CODE: if ((float)$result['special']) {
+LINE: 65
+CODE: 'price' => $price,
+NOT FOUND - OPERATIONS ABORTED!
+
+FILE: catalog/controller/extension/module/special.php
+CODE: $data['products'] = array();
+LINE: 32
+CODE: if ((float)$result['special']) {
+LINE: 65
+CODE: 'price' => $price,
+NOT FOUND - OPERATIONS ABORTED!
+CODE: $this->load->model('tool/image');
+LINE: 44
+CODE: if ((float)$result['special']) {
+LINE: 220
+CODE: 'price' => $price,
+NOT FOUND - OPERATIONS ABORTED!
+CODE: $this->load->model('tool/image');
+LINE: 42
+LINE: 126
+CODE: if ((float)$result['special']) {
+LINE: 239
+CODE: 'price' => $price,
+NOT FOUND - OPERATIONS ABORTED!
+CODE: $this->load->model('tool/image');
+LINE: 44
+CODE: if ((float)$result['special']) {
+LINE: 248
+CODE: 'price' => $price,
+NOT FOUND - OPERATIONS ABORTED!
+CODE: $this->load->model('tool/image');
+LINE: 42
+CODE: if ((float)$result['special']) {
+LINE: 138
+CODE: 'price' => $price,
+NOT FOUND - OPERATIONS ABORTED!
+
+FILE: catalog/view/theme/default/template/product/category.twig
+CODE: {{ product.price }}
+LINE: 137
+CODE: {% if product.tax %}
+LINE: 147
+CODE: <button type="button" onclick="cart.add('{{ product.product_id }}', '{{ product.minimum }}');"><i class="fa fa-shopping-cart"></i> <span class="hidden-xs hidden-sm hidden-md">{{ button_cart }}</span></button>
+LINE: 157
+
+FILE: catalog/view/theme/so-emarket/template/product/category.twig
+CODE: {{ product.price }}
+NOT FOUND - OPERATIONS ABORTED!
+
+FILE: catalog/view/theme/so-mobile/template/product/category.twig
+CODE: {{ product.price }}
+NOT FOUND - OPERATIONS ABORTED!
+
+FILE: catalog/view/theme/default/template/product/manufacturer_info.twig
+CODE: {{ product.price }}
+LINE: 79
+CODE: {% if product.tax %}
+LINE: 89
+CODE: <button type="button" onclick="cart.add('{{ product.product_id }}', '{{ product.minimum }}');"><i class="fa fa-shopping-cart"></i> <span class="hidden-xs hidden-sm hidden-md">{{ button_cart }}</span></button>
+LINE: 100
+
+FILE: catalog/view/theme/so-emarket/template/product/manufacturer_info.twig
+CODE: {{ product.price }}
+NOT FOUND - OPERATIONS ABORTED!
+
+FILE: catalog/view/theme/so-mobile/template/product/manufacturer_info.twig
+CODE: {{ product.price }}
+NOT FOUND - OPERATIONS ABORTED!
+
+FILE: catalog/view/theme/default/template/product/search.twig
+CODE: {{ product.price }}
+LINE: 123
+CODE: {% if product.tax %}
+LINE: 135
+CODE: <button type="button" onclick="cart.add('{{ product.product_id }}', '{{ product.minimum }}');"><i class="fa fa-shopping-cart"></i> <span class="hidden-xs hidden-sm hidden-md">{{ button_cart }}</span></button>
+LINE: 155
+
+FILE: catalog/view/theme/so-emarket/template/product/search.twig
+CODE: {{ product.price }}
+NOT FOUND - OPERATIONS ABORTED!
+
+FILE: catalog/view/theme/so-mobile/template/product/search.twig
+CODE: {{ product.price }}
+NOT FOUND - OPERATIONS ABORTED!
+
+FILE: catalog/view/theme/default/template/product/special.twig
+CODE: {{ product.price }}
+LINE: 79
+CODE: {% if product.tax %}
+LINE: 89
+CODE: <button type="button" onclick="cart.add('{{ product.product_id }}', '{{ product.minimum }}');"><i class="fa fa-shopping-cart"></i> <span class="hidden-xs hidden-sm hidden-md">{{ button_cart }}</span></button>
+LINE: 101
+
+FILE: catalog/view/theme/so-emarket/template/product/special.twig
+CODE: {{ product.price }}
+NOT FOUND - OPERATIONS ABORTED!
+
+FILE: catalog/view/theme/so-mobile/template/product/special.twig
+CODE: {{ product.price }}
+NOT FOUND - OPERATIONS ABORTED!
+CODE: $this->load->model('catalog/category');
+LINE: 47
+CODE: if ((float)$product_info['special']) {
+LINE: 345
+CODE: if ((float)$result['special']) {
+LINE: 488
+CODE: 'price' => $price,
+NOT FOUND - OPERATIONS ABORTED!
+
+FILE: catalog/view/theme/default/template/product/product.twig
+CODE: {{ price }}
+LINE: 137
+CODE: {% if tax %}
+LINE: 153
+CODE: {{ price }}
+LINE: 143
+CODE: {% if product.tax %}
+LINE: 342
+
+FILE: catalog/view/theme/so-emarket/template/product/product.twig
+CODE: {{ price }}
+LINE: 132
+CODE: {% if tax %}
+LINE: 163
+CODE: {{ price }}
+LINE: 138
+CODE: {% if product.tax %}
+NOT FOUND - OPERATIONS ABORTED!
+
+FILE: catalog/view/theme/so-mobile/template/product/product.twig
+CODE: {{ price }}
+LINE: 133
+CODE: {% if tax %}
+LINE: 147
+CODE: {{ price }}
+LINE: 139
+CODE: {% if product.tax %}
+NOT FOUND - OPERATIONS ABORTED!
+CODE: <input type="button" value="{{ button_cart }}" data-loading-text="{{ text_loading }}" id="button-cart" class="btn btn-mega btn-lg">
+NOT FOUND - OPERATIONS ABORTED!
+CODE: <input type="button" value="{{ button_cart }}" data-loading-text="{{ text_loading }}" id="button-cart" class="btn btn-mega btn-lg">
+NOT FOUND - OPERATIONS ABORTED!
+CODE: <input type="button" value="{{ button_cart }}" data-loading-text="{{ text_loading }}" id="button-cart" class="btn btn-mega btn-lg">
+NOT FOUND - OPERATIONS ABORTED!
+
+FILE: catalog/controller/account/wishlist.php
+CODE: $this->load->model('tool/image');
+LINE: 33
+CODE: if ((float)$product_info['special']) {
+LINE: 105
+CODE: 'price' => $price,
+NOT FOUND - OPERATIONS ABORTED!
+
+FILE: catalog/view/theme/default/template/account/wishlist.twig
+CODE: {{ product.price }}
+LINE: 45
+CODE: <button type="button" onclick="cart.add('{{ product.product_id }}');" data-toggle="tooltip" title="{{ button_cart }}" class="btn btn-primary"><i class="fa fa-shopping-cart"></i></button>
+LINE: 54
+
+FILE: catalog/controller/product/compare.php
+CODE: $this->load->model('tool/image');
+LINE: 25
+CODE: if ((float)$product_info['special']) {
+LINE: 93
+CODE: 'price' => $price,
+NOT FOUND - OPERATIONS ABORTED!
+
+FILE: catalog/view/theme/default/template/product/compare.twig
+CODE: {{ product.price }}
+LINE: 45
+CODE: <input type="button" value="{{ button_cart }}" class="btn btn-primary btn-block" onclick="cart.add('{{ product.product_id }}', '{{ product.minimum }}');" />
+LINE: 124
+
+FILE: catalog/view/theme/so-emarket/template/product/compare.twig
+CODE: {{ product.price }}
+LINE: 48
+CODE: <input type="button" value="{{ button_cart }}" class="btn btn-primary btn-block" onclick="cart.add('{{ product.product_id }}', '{{ product.minimum }}');" />
+LINE: 129
+
+FILE: catalog/view/theme/so-mobile/template/product/compare.twig
+CODE: {{ product.price }}
+LINE: 49
+CODE: <input type="button" value="{{ button_cart }}" class="btn btn-primary btn-block" onclick="cart.add('{{ product.product_id }}', '{{ product.minimum }}');" />
+LINE: 126
+
+FILE: catalog/controller/extension/module/so_filter_shop_by.php
+CODE: $this->load->model('extension/module/so_filter_shop_by');
+LINE: 26
+LINE: 286
+CODE: if ((float)$result['special']) {
+LINE: 361
+CODE: 'price' => $price,
+NOT FOUND - OPERATIONS ABORTED!
+
+FILE: catalog/view/theme/so-emarket/template/soconfig/listing.twig
+CODE: {{ product.price }}
+LINE: 190
+CODE: <button class="addToCart btn-button" type="button" title="{{ button_cart }}" onclick="cart.add('{{ product.product_id }}', '{{ product.minimum }}');"><i class="fa fa-shopping-basket"></i><span>{{ button_cart }}</span></button>
+LINE: 148
+
+FILE: catalog/view/theme/so-mobile/template/soconfig/listing.twig
+CODE: {{ product.price }}
+LINE: 116
+CODE: <button class="addToCart btn-button" type="button" title="{{ button_cart }}" onclick="cart.add('{{ product.product_id }}', '{{ product.minimum }}');"><i class="fa fa-shopping-basket"></i><span>{{ button_cart }}</span></button>
+NOT FOUND - OPERATIONS ABORTED!
+
+FILE: catalog/controller/extension/module/so_listing_tabs.php
+CODE: $this->load->model('extension/module/so_listing_tabs');
+LINE: 30
+CODE: if ((float)$product_info['special']) {
+LINE: 670
+CODE: 'price' => $price,
+NOT FOUND - OPERATIONS ABORTED!
+
+FILE: catalog/view/theme/so-emarket/template/extension/module/so_listing_tabs/category/default_items.twig
+CODE: {{ product.price }}
+LINE: 75
+CODE: <button type="button" class="addToCart btn-button" title="{{ objlang.get('button_cart') }}" onclick="cart.add('{{ product.product_id }} ');"><i class="fa fa-shopping-basket"></i><span>{{ objlang.get('button_cart') }} </span></button>
+NOT FOUND - OPERATIONS ABORTED!
+
+FILE: catalog/view/theme/so-emarket/template/extension/module/so_listing_tabs/default/default_items.twig
+CODE: {{ product.price }}
+LINE: 86
+CODE: <button type="button" class="addToCart btn-button" title="{{ objlang.get('button_cart') }}" onclick="cart.add('{{ product.product_id }} ');"><i class="fa fa-shopping-basket"></i><span>{{ objlang.get('button_cart') }} </span></button>
+LINE: 48
+
+FILE: catalog/view/theme/so-emarket/template/extension/module/so_listing_tabs/default2/default_items.twig
+CODE: {{ product.price }}
+LINE: 83
+CODE: <button type="button" class="addToCart btn-button" title="{{ objlang.get('button_cart') }}" onclick="cart.add('{{ product.product_id }} ');"><i class="fa fa-shopping-basket"></i><span>{{ objlang.get('button_cart') }} </span></button>
+LINE: 62
+
+FILE: catalog/view/theme/so-emarket/template/extension/module/so_listing_tabs/default3/default_items.twig
+CODE: {{ product.price }}
+LINE: 72
+CODE: <button type="button" class="addToCart btn-button" title="{{ objlang.get('button_cart') }}" onclick="cart.add('{{ product.product_id }} ');"><i class="fa fa-shopping-basket"></i><span>{{ objlang.get('button_cart') }} </span></button>
+NOT FOUND - OPERATIONS ABORTED!
+
+FILE: catalog/view/theme/so-emarket/template/extension/module/so_listing_tabs/default4/default_items.twig
+CODE: {{ product.price }}
+LINE: 87
+CODE: <button type="button" class="addToCart btn-button" title="{{ objlang.get('button_cart') }}" onclick="cart.add('{{ product.product_id }} ');"><i class="fa fa-shopping-basket"></i><span>{{ objlang.get('button_cart') }} </span></button>
+LINE: 48
+
+FILE: catalog/view/theme/so-mobile/template/extension/module/so_listing_tabs/category/default_items.twig
+CODE: {{ product.price }}
+LINE: 74
+CODE: <button type="button" class="addToCart btn-button" title="{{ objlang.get('button_cart') }}" onclick="cart.add('{{ product.product_id }} ');"><i class="fa fa-shopping-basket"></i><span>{{ objlang.get('button_cart') }} </span></button>
+NOT FOUND - OPERATIONS ABORTED!
+
+FILE: catalog/view/theme/so-mobile/template/extension/module/so_listing_tabs/default/default_items.twig
+CODE: {{ product.price }}
+LINE: 87
+CODE: <button type="button" class="addToCart btn-button" title="{{ objlang.get('button_cart') }}" onclick="cart.add('{{ product.product_id }} ');"><i class="fa fa-shopping-basket"></i><span>{{ objlang.get('button_cart') }} </span></button>
+NOT FOUND - OPERATIONS ABORTED!
+
+FILE: catalog/view/theme/so-mobile/template/extension/module/so_listing_tabs/default2/default_items.twig
+CODE: {{ product.price }}
+LINE: 85
+CODE: <button type="button" class="addToCart btn-button" title="{{ objlang.get('button_cart') }}" onclick="cart.add('{{ product.product_id }} ');"><i class="fa fa-shopping-basket"></i><span>{{ objlang.get('button_cart') }} </span></button>
+NOT FOUND - OPERATIONS ABORTED!
+
+FILE: catalog/view/theme/so-mobile/template/extension/module/so_listing_tabs/default3/default_items.twig
+CODE: {{ product.price }}
+LINE: 71
+CODE: <button type="button" class="addToCart btn-button" title="{{ objlang.get('button_cart') }}" onclick="cart.add('{{ product.product_id }} ');"><i class="fa fa-shopping-basket"></i><span>{{ objlang.get('button_cart') }} </span></button>
+NOT FOUND - OPERATIONS ABORTED!
+----------------------------------------------------------------
+MOD: So Color Swatch
+CODE: $data['layouts'] = $this->model_design_layout->getLayouts();
+LINE: 1174
+CODE: $data['layouts'] = $this->model_design_layout->getLayouts();
+LINE: 1178
+CODE: $data['product_images']
+LINE: 1080
+LINE: 1098
+CODE: 'sort_order' => $product_image['sort_order']
+LINE: 1101
+CODE: <td class="text-right">{{ entry_sort_order }}</td>
+LINE: 1072
+CODE: <td class="text-right"><input type="text" name="product_image[{{ image_row }}][sort_order]" value="{{ product_image.sort_order }}" placeholder="{{ entry_sort_order }}" class="form-control" /></td>
+LINE: 1097
+CODE: {{ footer }}
+LINE: 1731
+CODE: <td colspan="2"></td>
+LINE: 1106
+CODE: html += ' <td class="text-right"><input type="text" name="product_image[' + image_row + '][sort_order]" value="" placeholder="{{ entry_sort_order }}" class="form-control" /></td>';
+NOT FOUND - OPERATIONS ABORTED!
+CODE: $this->db->query("INSERT INTO " . DB_PREFIX . "product_image SET product_id = '" . (int)$product_id . "', image = '" . $this->db->escape($product_image['image']) . "', sort_order = '" . (int)$product_image['sort_order'] . "'");
+LINE: 81
+LINE: 235
+CODE: public function getTotalProductsByTaxClassId($tax_class_id) {
+LINE: 719
+CODE: // Entry
+LINE: 32
+CODE: // Entry
+LINE: 32
+CODE: $data['products'][] = array(
+LINE: 314
+CODE: $data['products'][] = array
+LINE: 315
+CODE: $data['products'][] = array(
+LINE: 342
+CODE: $data['products'][] = array
+LINE: 343
+CODE: $data['products'][] = array(
+LINE: 333
+CODE: $data['products'][] = array
+LINE: 334
+CODE: $data['products'][] = array(
+LINE: 232
+CODE: $data['products'][] = array
+LINE: 233
+CODE: <img data-sizes="auto" src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==" data-src="{{ product.thumb }}" title="{{ product.name }} " class="lazyload img-responsive" />
+NOT FOUND - OPERATIONS ABORTED!
+CODE: <img data-sizes="auto" src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==" data-src="{{ product.thumb }}" title="{{ product.name }} " class="lazyload img-responsive" />
+NOT FOUND - OPERATIONS ABORTED!
+CODE: $data['products'] = array();
+LINE: 531
+CODE: <h3>{{ text_option }}</h3>
+LINE: 306
+CODE: var element = $('#input-option' + i.replace('_', '-'));
+LINE: 545
+CODE: <h3>{{ text_option }}</h3>
+LINE: 350
+CODE: var element = $('#input-option' + i.replace('_', '-'));
+LINE: 873
+LINE: 940
+CODE: <h3>{{ text_option }}</h3>
+NOT FOUND - OPERATIONS ABORTED!
+CODE: $data['products'][] = array(
+LINE: 142
+CODE: 'product_id' => $product_info['product_id'],
+NOT FOUND - OPERATIONS ABORTED!
+CODE: $data['products'][] = array(
+LINE: 127
+CODE: $data['products'][] = array
+LINE: 128
+CODE: $data['products'][] = array(
+LINE: 142
+CODE: $data['products'][] = array
+LINE: 143
+CODE: $data['products'][] = array(
+LINE: 142
+CODE: $data['products'][] = array
+LINE: 143
+CODE: <img src="{{ product.thumb }}" alt="{{ product.name }}" title="{{ product.name }}" class="img-responsive" />
+LINE: 5
+CODE: <h4><a href="{{ product.href }}">{{ product.name }}</a></h4>
+LINE: 63
+CODE: <img src="{{ product.thumb }}" alt="{{ product.name }}" title="{{ product.name }}" class="img-responsive" />
+LINE: 5
+CODE: <h4><a href="{{ product.href }}">{{ product.name }}</a></h4>
+LINE: 63
+CODE: <img src="{{ product.thumb }}" alt="{{ product.name }}" title="{{ product.name }}" class="img-responsive" />
+LINE: 4
+CODE: <h4><a href="{{ product.href }}">{{ product.name }}</a></h4>
+LINE: 62
+CODE: <img src="{{ product.thumb }}" alt="{{ product.name }}" title="{{ product.name }}" class="img-responsive" />
+LINE: 4
+CODE: <h4><a href="{{ product.href }}">{{ product.name }}</a></h4>
+LINE: 62
+----------------------------------------------------------------
+MOD: So Placeholder
+CODE: $image = $this->model_tool_image->resize('placeholder.png', $this->config->get('theme_' . $this->config->get('config_theme') . '_image_product_width'), $this->config->get('theme_' . $this->config->get('config_theme') . '_image_product_height'));
+LINE: 204
+CODE: // Set the last category breadcrumb
+LINE: 144
+CODE: $data['thumb'] = '';
+LINE: 153
+CODE: $data['categories'][]
+LINE: 193
+CODE: $data['categories'][]
+LINE: 194
+----------------------------------------------------------------
+MOD: Modification Manager
+
+FILE: admin/language/en-gb/marketplace/modification.php
+CODE: <?php
+LINE: 25
+
+FILE: admin/controller/marketplace/modification.php
+CODE: public function index() {
+LINE: 13
+CODE: $this->model_setting_modification
+LINE: 34
+LINE: 133
+LINE: 531
+LINE: 565
+LINE: 683
+LINE: 687
+CODE: $this->model_setting_modification->
+LINE: 34
+LINE: 133
+LINE: 531
+LINE: 565
+LINE: 683
+LINE: 687
+CODE: $sort = 'name';
+LINE: 627
+CODE: $order = 'ASC';
+LINE: 633
+CODE: $handle = fopen(DIR_LOGS . 'ocmod.log', 'w+');
+LINE: 600
+CODE: $maintenance = $this->config->get('config_maintenance');
+LINE: 76
+CODE: $data['breadcrumbs'] = array();
+LINE: 696
+CODE: $data['sort_name'] =
+LINE: 791
+CODE: $filter_data = array(
+LINE: 717
+CODE: $data['modifications'][] = array(
+LINE: 736
+CODE: $pagination = new Pagination();
+LINE: 824
+CODE: $data['clear_log'] =
+LINE: 722
+CODE: $this->load->view('marketplace/modification'
+LINE: 884
+CODE: $this->response->redirect($this->url->link(!empty($data['redirect']) ? $data['redirect'] : 'marketplace/modification', 'user_token=' . $this->session->data['user_token'] . $url, true));
+LINE: 456
+CODE: if ($this->validate()) {
+LINE: 91
+CODE: $log[] = 'MOD:
+LINE: 188
+CODE: $operations = $file->getElementsByTagName('operation');
+LINE: 203
+CODE: $files = glob($path, GLOB_BRACE);
+LINE: 232
+CODE: if (!$status) {
+LINE: 420
+CODE: $ocmod->write(implode("\n", $log));
+LINE: 459
+CODE: protected function validate(
+LINE: 1452
+----------------------------------------------------------------
+MOD: Bug Fixing OC-3.x
+
+FILE: admin/controller/design/theme.php
+CODE: if ($theme == 'theme_default')
+LINE: 108
+LINE: 174
+LINE: 216
+LINE: 265
+CODE: {default,' . $theme . '}
+LINE: 122
+CODE: $this->load->language('information/contact')
+LINE: 12
+LINE: 179
+
+FILE: catalog/language/en-gb/common/cart.php
+CODE: $_['text_empty']
+LINE: 3
+
+FILE: catalog/language/ru-ru/common/cart.php
+CODE: $_['text_empty']
+LINE: 3
+
+FILE: catalog/view/theme/default/template/common/cart.twig
+CODE: text_empty
+LINE: 46
+
+FILE: catalog/view/theme/so-emarket/template/common/cart.twig
+CODE: text_empty
+LINE: 58
+----------------------------------------------------------------
+MOD: So Social Login
+
+FILE: catalog/view/theme/default/template/account/login.twig
+CODE: <div class="well">
+LINE: 24
+LINE: 31
+CODE: <input type="submit" value="{{ button_login }}" class="btn btn-primary" />
+LINE: 47
+CODE: </form>
+LINE: 118
+CODE: {{ footer }}
+LINE: 141
+
+FILE: catalog/view/theme/so-emarket/template/account/login.twig
+CODE: <div class="well">
+LINE: 31
+CODE: <input type="submit" value="{{ button_login }}" class="btn btn-primary" />
+LINE: 45
+CODE: </form>
+LINE: 116
+CODE: {{ footer }}
+LINE: 139
+
+FILE: catalog/controller/account/login.php
+CODE: $data['header'] = $this->load->controller('common/header');
+LINE: 258
+CODE: $data['title'] = $this->document->getTitle();
+LINE: 176
+
+FILE: catalog/view/theme/default/template/common/header.twig
+CODE: <div id="socialLogin"></div>
+NOT FOUND - OPERATIONS ABORTED!
+
+FILE: catalog/view/theme/so-emarket/template/common/header.twig
+CODE: <div id="socialLogin"></div>
+LINE: 305
+
+FILE: catalog/view/theme/so-mobile/template/common/header.twig
+CODE: <div id="socialLogin"></div>
+NOT FOUND - OPERATIONS ABORTED!
+----------------------------------------------------------------
+MOD: So Countdown Popup
+CODE: $data['scripts'] = $this->document->getScripts('footer');
+LINE: 93
+
+FILE: catalog/view/theme/default/template/common/footer.twig
+CODE: </footer>
+LINE: 46
+
+FILE: catalog/view/theme/so-emarket/template/common/footer.twig
+CODE: </footer>
+NOT FOUND - OPERATIONS ABORTED!
+
+FILE: catalog/view/theme/so-mobile/template/common/footer.twig
+CODE: </footer>
+NOT FOUND - OPERATIONS ABORTED!
+----------------------------------------------------------------
+MOD: So Tools
+CODE: $this->load->model('catalog/manufacturer');
+LINE: 120
+----------------------------------------------------------------
+MOD: Simple Blog
+CODE: $report = array();
+LINE: 900
+
+FILE: admin/language/en-gb/common/column_left.php
+CODE: $_['text_other_status']
+LINE: 100
+
+FILE: admin/language/ru-ru/common/column_left.php
+CODE: $_['text_other_status']
+LINE: 100
+
+FILE: catalog/controller/startup/seo_url.php
+CODE: if ($query->row['query'] && $url[0] != 'information_id' && $url[0] != 'manufacturer_id' && $url[0] != 'category_id' && $url[0] != 'product_id') {
+LINE: 43
+CODE: if ($url[0] == 'category_id') {
+LINE: 38
+CODE: $this->request->get['route'] = 'error/not_found'
+LINE: 60
+CODE: $this->request->get['route'] = 'information/information';
+LINE: 83
+CODE: } elseif ($key == 'path') {
+LINE: 124
+CODE: $categories = $this->model_catalog_category->getCategories(0);
+NOT FOUND - OPERATIONS ABORTED!
+----------------------------------------------------------------
+MOD: So Dashboard
+
+FILE: catalog/controller/account/edit.php
+CODE: $this->response->setOutput($this->load->view('account/edit', $data))
+LINE: 166
+CODE: protected function validate
+LINE: 212
+
+FILE: catalog/controller/account/account.php
+CODE: $this->response->setOutput($this->load->view('account/account', $data))
+LINE: 188
+CODE: $this->response->setOutput($this->load->view('account/account', $data))
+LINE: 188
+
+FILE: catalog/view/theme/default/template/account/edit.twig
+CODE: {{ footer }}
+LINE: 369
+CODE: {% for custom_field in custom_fields %}
+LINE: 73
+----------------------------------------------------------------
+MOD: So Google Amp (Accelerated Mobile Pages)
+
+FILE: catalog/language/en-gb/product/product.php
+CODE: // Entry
+LINE: 36
+
+FILE: catalog/language/ru-ru/product/product.php
+CODE: // Entry
+LINE: 36
+CODE: $this->document->addLink($this->url->link('product/product', 'product_id=' . $this->request->get['product_id']), 'canonical');
+LINE: 279
+CODE: $data['pagination'] = $pagination->render();
+LINE: 481
+CODE: if ($url[0] == 'product_id') {
+LINE: 35
+CODE: foreach ($parts as $part) {
+LINE: 21
+CODE: if (!isset($this->request->get['route'])) {
+LINE: 98
+CODE: if (isset($this->request->get['product_id'])) {
+LINE: 99
+CODE: ($data['route'] == 'information/information' && $key == 'information_id')
+LINE: 141
+CODE: $url .= '/' . $query->row['keyword'];
+LINE: 147
+LINE: 156
+LINE: 163
+LINE: 170
+LINE: 193
+----------------------------------------------------------------
+MOD: Adding support for install.php, install.sql when installing extensions
+
+FILE: admin/controller/marketplace/install.php
+CODE: $json['next'] = str_replace('&amp;', '&', $this->url->link('marketplace/install/remove', 'user_token=' . $this->session->data['user_token'], true));
+LINE: 348
+CODE: public function remove() {
+LINE: 440
+
+FILE: admin/language/en-gb/marketplace/install.php
+CODE: $_['text_remove']      = 'Removing temporary files!';
+LINE: 10
+----------------------------------------------------------------
+MOD: Purpletree Multivendor for OpenCart 3.x
+CODE: $report = array();
+LINE: 986
+CODE: $this->load->language('common/column_left');
+LINE: 8
+
+FILE: admin/controller/extension/extension/module.php
+CODE: $this->model_setting_extension->install('module', $this->request->get['extension']);
+LINE: 177
+CODE: $this->model_setting_extension->uninstall('module', $this->request->get['extension']);
+LINE: 229
+
+FILE: system/library/cart/user.php
+CODE: $user_query = $this->db->query("SELECT * FROM " . DB_PREFIX . "user WHERE user_id = '" . (int)$this->session->data['user_id'] . "' AND status = '1'");
+LINE: 30
+CODE: public function index() {
+LINE: 10
+
+FILE: catalog/controller/extension/module/account.php
+CODE: public function index() {
+LINE: 3
+
+FILE: admin/controller/startup/permission.php
+CODE: 'extension/openbay'
+LINE: 31
+CODE: $this->load->language('catalog/product');
+LINE: 8
+LINE: 21
+LINE: 76
+LINE: 131
+LINE: 188
+CODE: $data['cancel'] = $this->url->link('catalog/product', 'user_token=' . $this->session->data['user_token'] . $url, true);
+LINE: 600
+CODE: $product_info = $this->model_catalog_product->getProduct($this->request->get['product_id']);
+LINE: 607
+CODE: $data['tab_openbay']
+NOT FOUND - OPERATION SKIPPED!
+CODE: $this->load->model('catalog/recurring');
+LINE: 742
+CODE: <li><a href="#tab-design" data-toggle="tab">{{ tab_design }}</a></li>
+LINE: 43
+CODE: </form>
+LINE: 1238
+CODE: if (isset($data['product_attribute'])) {
+LINE: 40
+CODE: if (!empty($data['product_attribute'])) {
+LINE: 211
+CODE: if (isset($this->session->data['success'])) {
+LINE: 32
+
+FILE: catalog/view/theme/default/template/account/account.twig
+CODE: {% if success %}
+LINE: 12
+CODE: $data['recurring'] = $this->url->link('account/recurring', '', true);
+LINE: 28
+
+FILE: catalog/view/theme/default/template/extension/module/account.twig
+CODE: <a href="{{ newsletter }}" class="list-group-item">{{ text_newsletter }}</a>
+LINE: 13
+
+FILE: catalog/view/theme/so-emarket/template/extension/module/account.twig
+CODE: <a href="{{ newsletter }}" class="list-group-item">{{ text_newsletter }}</a>
+LINE: 21
+
+FILE: admin/controller/customer/customer.php
+CODE: $data['user_token'] = $this->session->data['user_token'];
+LINE: 415
+LINE: 555
+CODE: $this->load->language('customer/customer');
+LINE: 8
+LINE: 21
+LINE: 80
+LINE: 139
+LINE: 200
+LINE: 1210
+LINE: 1250
+LINE: 1272
+LINE: 1315
+LINE: 1337
+LINE: 1380
+LINE: 1402
+CODE: $this->model_customer_customer->addCustomer($this->request->post);
+LINE: 28
+CODE: $this->model_customer_customer->editCustomer($this->request->get['customer_id'], $this->request->post);
+LINE: 106
+CODE: $customer_info = $this->model_customer_customer->getCustomer($this->request->get['customer_id']);
+LINE: 739
+CODE: protected function validateForm() {
+LINE: 1036
+CODE: if (isset($this->request->post['customer_group_id'])) {
+LINE: 769
+CODE: if (isset($this->error['address'])) {
+LINE: 680
+
+FILE: admin/view/template/customer/customer_form.twig
+CODE: <label class="col-sm-2 control-label" for="input-safe">{{ entry_safe }}</label>
+LINE: 288
+CODE: <button type="submit" form="form-customer" data-toggle="tooltip" title="{{ button_save }}" class="btn btn-primary"><i class="fa fa-save"></i></button>
+LINE: 5
+CODE: {% if error_warning %}
+LINE: 23
+CODE: {{ footer }
+LINE: 1509
+
+FILE: catalog/model/checkout/order.php
+CODE: public function addOrder($data) {
+LINE: 12
+CODE: public function editOrder($order_id, $data) {
+LINE: 66
+CODE: $this->db->query("DELETE FROM " . DB_PREFIX . "order_option WHERE order_id = '" . (int)$order_id . "'");
+LINE: 77
+CODE: $this->db->query("DELETE FROM " . DB_PREFIX . "order_voucher WHERE order_id = '" . (int)$order_id . "'");
+LINE: 101
+CODE: public function addOrder($data) {
+LINE: 41
+CODE: $order_product_id = $this->db->getLastId();
+LINE: 99
+LINE: 199
+CODE: if (isset($data['vouchers'])) {
+LINE: 175
+LINE: 346
+CODE: $this->db->query("UPDATE `" . DB_PREFIX . "order` SET order_status_id = '" . (int)$order_status_id . "', date_modified = NOW() WHERE order_id = '" . (int)$order_id . "'");
+LINE: 723
+CODE: $this->db->query("DELETE FROM `" . DB_PREFIX . "order` WHERE order_id = '" . (int)$order_id . "'");
+LINE: 379
+
+FILE: catalog/controller/mail/register.php
+CODE: if (in_array('account', (array)$this->config->get('config_mail_alert'))) {
+LINE: 110
+CODE: index(&$route, &$args, &$output) {
+LINE: 52
+
+FILE: catalog/controller/account/register.php
+CODE: $this->load->language('account/register');
+LINE: 12
+CODE: if (isset($this->error['warning'])) {
+LINE: 73
+CODE: $customer_id = $this->model_account_customer->addCustomer($this->request->post);
+LINE: 35
+CODE: private function validate() {
+LINE: 272
+CODE: if (isset($this->error['confirm'])) {
+LINE: 138
+
+FILE: catalog/view/theme/default/template/account/register.twig
+CODE: {{ captcha }}
+LINE: 305
+CODE: $captcha;
+NOT FOUND - OPERATION SKIPPED!
+CODE: {{ column_left }}
+LINE: 15
+
+FILE: system/library/cart/cart.php
+CODE: public function getSubTotal() {
+LINE: 321
+
+FILE: system/library/cart/customer.php
+CODE: class Customer {
+LINE: 25
+CODE: public function getRewardPoints() {
+LINE: 159
+CODE: $this->load->language('product/product');
+LINE: 26
+LINE: 731
+LINE: 776
+LINE: 822
+CODE: $product_id = (int)$this->request->get['product_id'];
+LINE: 237
+CODE: {% if reward %}
+LINE: 154
+CODE: {% if reward %}
+LINE: 227
+CODE: {% if reward %}
+LINE: 226
+CODE: if ($product['minimum'] > $product_total) {
+LINE: 546
+LINE: 1165
+LINE: 1420
+
+FILE: catalog/controller/checkout/cart.php
+CODE: if ($product['minimum'] > $product_total) {
+LINE: 77
+CODE: $data['action'] = $this->url->link('checkout/cart/edit', '', true);
+LINE: 51
+CODE: if ($url[0] == 'category_id') {
+LINE: 58
+CODE: if ($query->row['query'] && $url[0] != 'information_id' && $url[0] != 'manufacturer_id' && $url[0] != 'category_id' && $url[0] != 'product_id') {
+NOT FOUND - OPERATION SKIPPED!
+CODE: if ($query->row['query'] && $url[0] != 'information_id' && $url[0] != 'manufacturer_id' && $url[0] != 'category_id' && $url[0] != 'product_id' && $url[0] != 'simple_blog_article_id' && $url[0] != 'simple_blog_category_id' && $url[0] != 'simple_blog_author_id') {
+LINE: 75
+CODE: $this->request->get['route'] = 'information/information';
+LINE: 115
+CODE: } elseif ($key == 'path') {
+LINE: 229
+CODE: $data['menu']
+LINE: 235
+CODE: <base
+LINE: 22
+CODE: <ul class="list-inline">
+LINE: 59
+CODE: </head>
+LINE: 51
+CODE: <base
+LINE: 24
+CODE: <ul class="list-inline">
+NOT FOUND - OPERATION SKIPPED!
+CODE: </head>
+LINE: 128
+CODE: <base
+LINE: 24
+CODE: <ul class="list-inline">
+NOT FOUND - OPERATION SKIPPED!
+CODE: </head>
+LINE: 97
+CODE: </body>
+LINE: 64
+CODE: </body>
+LINE: 122
+CODE: </body>
+LINE: 78
+
+FILE: catalog/view/theme/default/template/account/order_info.twig
+CODE: <td class="text-left">{{ history.comment }}</td>
+LINE: 149
+CODE: <td class="text-left">{{ column_comment }}</td>
+LINE: 139
+CODE: <td class="text-left">{{ column_date_added }}</td>
+LINE: 137
+CODE: <td class="text-left">{{ history.date_added }}</td>
+LINE: 161
+
+FILE: catalog/view/theme/default/template/account/order_list.twig
+CODE: <td class="text-left">{{ order.status }}</td>
+LINE: 37
+
+FILE: admin/controller/sale/order.php
+CODE: foreach ($orders as $order_id) {
+LINE: 1497
+LINE: 1713
+CODE: $total_data = array();
+LINE: 1818
+CODE: public function shipping() {
+LINE: 1859
+
+FILE: catalog/controller/account/order.php
+CODE: $data['histories'][] = array(
+LINE: 318
+CODE: $data['continue'] = $this->url->link('account/order', '', true);
+LINE: 335
+CODE: $this->model_account_order->getOrderHistories($this->request->get['order_id']);
+LINE: 329
+CODE: 'name'       => $result['firstname'] . ' ' . $result['lastname'],
+LINE: 56
+
+FILE: catalog/model/account/order.php
+CODE: getOrderHistories
+LINE: 221
+
+FILE: catalog/controller/mail/order.php
+CODE: $emails = explode(',', $this->config->get('config_mail_alert_email'));
+LINE: 573
+CODE: $results = $this->model_catalog_product->getProducts($filter_data);
+LINE: 214
+CODE: public function index() {
+LINE: 3
+CODE: public function index() {
+LINE: 3
+CODE: $data['products'][] = array(
+LINE: 333
+CODE: $this->response->setOutput($this->load->view('product/category', $data));
+LINE: 536
+----------------------------------------------------------------

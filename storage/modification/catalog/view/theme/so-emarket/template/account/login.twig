@@ -1,0 +1,140 @@
+{{ header }}
+<div class="container">
+  <ul class="breadcrumb">
+    {% for breadcrumb in breadcrumbs %}
+    <li><a href="{{ breadcrumb.href }}">{{ breadcrumb.text }}</a></li>
+    {% endfor %}
+  </ul>
+  {% if success %}
+  <div class="alert alert-success alert-dismissible"><i class="fa fa-check-circle"></i> {{ success }}</div>
+  {% endif %}
+  {% if error_warning %}
+  <div class="alert alert-danger alert-dismissible"><i class="fa fa-exclamation-circle"></i> {{ error_warning }}</div>
+  {% endif %}
+  <div class="row">{{ column_left }}
+   {% if column_left and column_right %}
+        {% set class = 'col-sm-6 fluid-allsidebar' %}
+    {% elseif column_left or column_right %}
+        {% set class = 'col-md-9 col-sm-12 fluid-sidebar' %}
+    {% else %}
+        {% set class = 'col-sm-12' %}
+    {% endif %}
+    <div id="content" class="{{ class }}">{{ content_top }}
+      <div class="row">
+        <div class="col-sm-6">
+          <div class="well ">
+            <h2>{{ text_new_customer }}</h2>
+            <p><strong>{{ text_register }}</strong></p>
+            <p>{{ text_register_account }}</p>
+            <a href="{{ register }}" class="btn btn-primary">{{ button_continue }}</a></div>
+        </div>
+        <div class="col-sm-6">
+          
+ <div class="well col-sm-12"> 
+ 
+            <h2>{{ text_returning_customer }}</h2>
+            <p><strong>{{ text_i_am_returning_customer }}</strong></p>
+            <form action="{{ action }}" method="post" enctype="multipart/form-data">
+              <div class="form-group">
+                <label class="control-label" for="input-email">{{ entry_email }}</label>
+                <input type="text" name="email" value="{{ email }}" placeholder="{{ entry_email }}" id="input-email" class="form-control" />
+              </div>
+              <div class="form-group">
+                <label class="control-label" for="input-password">{{ entry_password }}</label>
+                <input type="password" name="password" value="{{ password }}" placeholder="{{ entry_password }}" id="input-password" class="form-control" />
+                <a href="{{ forgotten }}">{{ text_forgotten }}</a></div>
+              
+ <input type="submit" value="{{ button_login }}" class="btn btn-primary pull-left" /> 
+ 
+              {% if redirect %}
+              <input type="hidden" name="redirect" value="{{ redirect }}" />
+              {% endif %}
+            </form>
+
+ {% if setting is defined and setting.so_sociallogin_enable %}
+ <column id="column-login" class="col-sm-8 pull-right">
+ <div class="row">
+ {% if warning is defined %}
+ <div class="alert alert-warning"><i class="fa fa-check-circle"></i> {{ warning }}</div>
+ {% endif %}
+ 
+ <div class="social_login pull-right" id="so_sociallogin">
+ {% if setting.so_sociallogin_fbstatus %}
+ {% if setting.so_sociallogin_button == 'image' %}
+ <a class="social-icon" href="{{ fblink }}">
+ <img class="img-responsive" src="{{ fbimage }}" 
+ data-toggle="tooltip" alt="{{ setting.so_sociallogin_fbtitle }}" 
+ title="{{ setting.so_sociallogin_fbtitle }}"
+ />
+ </a>
+ {% else %}
+ <a href="{{ fblink }}" class="btn btn-social-icon btn-sm btn-facebook"><i class="fa fa-facebook fa-fw" aria-hidden="true"></i></a>
+ {% endif %}
+ {% endif %}
+ 
+ {% if setting.so_sociallogin_twitstatus %}
+ {% if setting.so_sociallogin_button == 'image' %}
+ <a class="social-icon" href="{{ twitlink }}">
+ <img class="img-responsive" src="{{ twitimage }}" 
+ data-toggle="tooltip" alt="{{ setting.so_sociallogin_twittertitle }}" 
+ title="{{ setting.so_sociallogin_twittertitle }}"
+ />
+ </a>
+ {% else %}
+ <a href="{{ twitlink }}" class="btn btn-social-icon btn-sm btn-twitter"><i class="fa fa-twitter fa-fw" aria-hidden="true"></i></a>
+ {% endif %}
+ {% endif %}
+ 
+ {% if setting.so_sociallogin_googlestatus %}
+ {% if setting.so_sociallogin_button == 'image' %}
+ <a class="social-icon" href="{{ googlelink }}">
+ <img class="img-responsive" src="{{ googleimage }}" 
+ data-toggle="tooltip" alt="{{ setting.so_sociallogin_googletitle }}" 
+ title="{{ setting.so_sociallogin_googletitle }}" 
+ />
+ </a>
+ {% else %}
+ <a href="{{ googlelink }}" class="btn btn-social-icon btn-sm btn-google-plus"><i class="fa fa-google fa-fw" aria-hidden="true"></i></a>
+ {% endif %}
+ {% endif %}
+ 
+ {% if setting.so_sociallogin_linkstatus %}
+ {% if setting.so_sociallogin_button == 'image' %}
+ <a class="social-icon" href="{{ linkdinlink }}">
+ <img class="img-responsive" src="{{ linkdinimage }}" 
+ data-toggle="tooltip" alt="{{ setting.so_sociallogin_linkedintitle }}" 
+ title="{{ setting.so_sociallogin_linkedintitle }}"
+ />
+ </a>
+ {% else %}
+ <a href="{{ linkdinlink }}" class="btn btn-social-icon btn-sm btn-linkdin"><i class="fa fa-linkedin fa-fw" aria-hidden="true"></i></a>
+ {% endif %}
+ {% endif %}
+ </div>
+ </div>
+ </column>
+ {% endif %}
+ 
+          </div>
+        </div>
+      </div>
+      {{ content_bottom }}</div>
+    {{ column_right }}</div>
+</div>
+
+ <style>
+ @media(max-width:991px){
+ #column-login,.social_login,.socalicon{
+ float:none !important;
+ width:100%;
+ }
+ .account-login .btn-primary{
+ float:none !important;
+ }
+ .social_login {
+ padding:0 10px;
+ }
+ }
+ </style>
+ 
+{{ footer }}
