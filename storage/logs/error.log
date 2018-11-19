@@ -131,3 +131,7 @@
 2018-11-19 13:22:46 - PHP Warning:  DB\MySQLi::__construct(): Couldn't fetch mysqli in D:\iSell\www\aruna.market\public_html\system\library\db\mysqli.php on line 10
 2018-11-19 13:22:46 - PHP Warning:  DB\MySQLi::__construct(): Couldn't fetch mysqli in D:\iSell\www\aruna.market\public_html\system\library\db\mysqli.php on line 10
 2018-11-19 13:54:56 - PHP Warning:  rmdir(D:\iSell\www\aruna.market/storage/cache/so): Directory not empty in D:\iSell\www\aruna.market\public_html\admin\controller\common\developer.php on line 70
+2018-11-19 18:36:32 - PHP Warning:  mysqli::__construct(): (HY000/1049): Unknown database 'baycik_aruna' in E:\iSellServer\www\aruna.market\public_html\system\library\db\mysqli.php on line 7
+2018-11-19 18:36:32 - PHP Warning:  DB\MySQLi::__construct(): Couldn't fetch mysqli in E:\iSellServer\www\aruna.market\public_html\system\library\db\mysqli.php on line 10
+2018-11-19 18:36:32 - PHP Warning:  DB\MySQLi::__construct(): Couldn't fetch mysqli in E:\iSellServer\www\aruna.market\public_html\system\library\db\mysqli.php on line 10
+2018-11-19 18:44:54 - PHP Warning:  Invalid argument supplied for foreach() in E:\iSellServer\www\aruna.market\storage\modification\system\engine\loader.php on line 83
